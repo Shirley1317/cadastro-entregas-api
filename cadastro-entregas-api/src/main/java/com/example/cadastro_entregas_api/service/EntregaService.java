@@ -52,4 +52,8 @@ public class EntregaService {
                     return true;
                 }).orElse(false);
     }
+
+    public List<Entrega> listarTodasEntregas() {
+        return entregaRepository.findAll();
+    }
 }
